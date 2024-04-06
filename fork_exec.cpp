@@ -13,7 +13,7 @@ int main(void)
         exit(1);
     } else if(pid == 0) {
         printf("Hi\n");
-        execl("./fork", "fork", "-l", (char *)0);
+        execl("./helloworl", "helloworld", "", (char *)0);
         printf("Can I print out after execl ...?? \n");
     } else {
         pid = wait(&exit_status);
